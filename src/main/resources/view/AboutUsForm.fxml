@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.dep11.AboutUsFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="719.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.AboutUsFormController">
+   <children>
+      <ImageView fx:id="rootAboutUs" fitHeight="730.0" fitWidth="514.0" layoutY="1.0" onMouseDragged="#rootAboutUsOnMouseDragged" onMousePressed="#rootAboutUsOnMousePressed" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../asserts.img/AboutUs3-removebg-preview(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="79.0" layoutX="194.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="146.0">
+         <image>
+            <Image url="@../asserts.img/texteditor.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="165.0" layoutY="145.0" prefHeight="40.0" prefWidth="166.0" text="Text Editor" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="145.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="419.0" prefHeight="21.0" prefWidth="214.0" text="Version 1.0.0" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="419.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="289.0" text="Product Version" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="318.0" text="TE Text Editor 1.0.0" AnchorPane.leftAnchor="59.0" />
+      <Label layoutX="63.0" layoutY="390.0" text="Build Information" AnchorPane.leftAnchor="63.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="165.0" layoutY="186.0" text="Version 1.0.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="100.0" />
+      <Label layoutX="64.0" layoutY="446.0" text="Date: 2023-08-21 14:07:40" AnchorPane.leftAnchor="64.0" />
+      <Label layoutX="140.0" layoutY="572.0" prefHeight="46.0" prefWidth="225.0" text="Copyright © 2023 THARINDU. " textFill="RED" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="572.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="486.0" text="This is simple Lightweigth text editor" AnchorPane.leftAnchor="132.0" />
+      <Label layoutX="194.0" layoutY="229.0" text="About Us" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="634.0" text="All rights reserved !" textFill="RED" />
+   </children>
 </AnchorPane>

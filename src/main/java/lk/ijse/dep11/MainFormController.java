@@ -16,6 +16,7 @@ import java.io.IOException;
 public class MainFormController {
     public MenuItem mnExit;
     public MenuItem mnUserGuide;
+    public MenuItem mnAboutUs;
 
     public void mExitOnAction(ActionEvent actionEvent) {
 
@@ -33,5 +34,21 @@ public class MainFormController {
         stage.centerOnScreen();
         stage.setResizable(true);
         stage.show();
+    }
+
+    public void mnAboutUsOnAction(ActionEvent actionEvent) throws IOException {
+        AnchorPane root = FXMLLoader.load(getClass().getResource("/view/AboutUsForm.fxml"));
+        Scene scene = new Scene(root);
+        scene.setFill(Color.TRANSPARENT);
+        Stage stage = new Stage(StageStyle.TRANSPARENT);
+        root.setBackground(Background.fill(Color.TRANSPARENT));
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initOwner(root.getScene().getWindow());
+        stage.setScene(scene);
+        stage.setTitle("About Us");
+        stage.centerOnScreen();
+        stage.setResizable(true);
+        stage.show();
+
     }
 }
