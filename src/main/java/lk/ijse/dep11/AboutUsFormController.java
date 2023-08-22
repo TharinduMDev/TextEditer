@@ -10,12 +10,13 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class AboutUsFormController {
-    public ImageView rootAboutUs;
 
+
+    public AnchorPane rootAboutUs;
     private double xOffset = 0;
     private double yOffset = 0;
 
-    
+
 //
 
     public void rootAboutUsOnMouseDragged(MouseEvent event) {

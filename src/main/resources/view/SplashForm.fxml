@@ -23,12 +23,12 @@
             <Font name="Droid Sans Fallback" size="72.0" />
          </font>
       </Label>
-      <Label layoutX="196.0" layoutY="240.0" text="Text Editor" textFill="#1db59b" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="204.0" AnchorPane.topAnchor="240.0">
+      <Label layoutX="195.0" layoutY="238.0" prefHeight="72.0" prefWidth="200.0" text="Text Editor" textFill="#1db59b" AnchorPane.bottomAnchor="136.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="205.0" AnchorPane.topAnchor="238.0">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <Label fx:id="lblLoad" alignment="CENTER" layoutX="168.0" layoutY="416.0" prefHeight="16.0" prefWidth="252.0" text="Version 1.0.0" textFill="#3300ff" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="416.0" />
-      <Label layoutX="251.0" layoutY="390.0" text="Version 1.0.0" textFill="#3300ff" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="251.0" AnchorPane.rightAnchor="262.0" AnchorPane.topAnchor="390.0" />
+      <Label fx:id="lblLoad" alignment="CENTER" layoutX="168.0" layoutY="416.0" prefHeight="16.0" prefWidth="252.0" text="Version 1.0.0" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="416.0" />
+      <Label layoutX="251.0" layoutY="390.0" text="Version 1.0.0" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="251.0" AnchorPane.rightAnchor="262.0" AnchorPane.topAnchor="390.0" />
    </children>
 </AnchorPane>
