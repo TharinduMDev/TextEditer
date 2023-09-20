@@ -94,18 +94,18 @@ public class MainFormController {
         FileOutputStream os = new FileOutputStream(file);
         BufferedOutputStream bos = new BufferedOutputStream(os);
         //Todo
-        Document doc = (Document) Jsoup.parse(txtTextEditor.getHtmlText());
-        Elements elements = doc.getAllElements();
-
-        StringBuilder plainText = new StringBuilder();
-
-        // Iterate through the elements and extract their text
-        for (Element element : elements) {
-            String text = element.ownText(); // Get the text of this element (excluding child elements)
-            if (!text.isEmpty()) {
-                plainText.append(text).append("\n");
-            }
-        }
+        Document doc = (Document) Jsoup.parse(String.format(txtTextEditor.getHtmlText()));
+       // Elements elements = doc.getAllElements();
+//
+//        StringBuilder plainText = new StringBuilder();
+//
+//        // Iterate through the elements and extract their text
+//        for (Element element : elements) {
+//            String text = element.ownText(); // Get the text of this element (excluding child elements)
+//            if (!text.isEmpty()) {
+//                plainText.append(text).append("\n");
+//            }
+//        }
 
 //        String htmlContent = ;
 //

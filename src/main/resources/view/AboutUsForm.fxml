@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -8,7 +9,7 @@
 
 <AnchorPane fx:id="rootAboutUs" onMouseDragged="#rootAboutUsOnMouseDragged" onMousePressed="#rootAboutUsOnMousePressed" prefHeight="723.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.AboutUsFormController">
    <children>
-      <ImageView fitHeight="729.0" fitWidth="718.0" layoutX="2.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="aboutRoot" fitHeight="729.0" fitWidth="718.0" layoutX="2.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts.img/texteditor.png" />
          </image>
@@ -52,5 +53,10 @@
             <Font size="12.0" />
          </font>
       </Label>
+      <Button fx:id="btnClose" layoutX="321.0" layoutY="547.0" mnemonicParsing="false" onAction="#btnCloseOnAction" prefHeight="32.0" prefWidth="80.0" text="Close">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
