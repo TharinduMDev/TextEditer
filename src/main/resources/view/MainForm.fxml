@@ -6,15 +6,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.HTMLEditor?>
 
-<AnchorPane prefHeight="401.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainFormController">
+<AnchorPane fx:id="root" prefHeight="401.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainFormController">
    <children>
       <MenuBar layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="538.0" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="New" />
-                  <MenuItem mnemonicParsing="false" text="Open" />
-                  <MenuItem mnemonicParsing="false" text="Save" />
+              <MenuItem fx:id="mnNew" mnemonicParsing="false" onAction="#mnNewOAction" text="New" />
+                  <MenuItem fx:id="mnOpen" mnemonicParsing="false" onAction="#mnOpenOnAction" text="Open" />
+                  <MenuItem fx:id="mnSaveAs" mnemonicParsing="false" onAction="#mnSaveAsOnAction" text="Save as" />
+                  <MenuItem fx:id="mnSave" mnemonicParsing="false" onAction="#mnSaveOnAction" text="Save" />
                   <MenuItem mnemonicParsing="false" text="Print" />
                   <MenuItem fx:id="mnExit" mnemonicParsing="false" onAction="#mExitOnAction" text="Exit" />
             </items>
@@ -35,6 +36,6 @@
           </Menu>
         </menus>
       </MenuBar>
-      <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="14.0" layoutY="47.0" prefHeight="200.0" prefWidth="506.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0" />
+      <HTMLEditor fx:id="txtTextEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="14.0" layoutY="47.0" prefHeight="200.0" prefWidth="506.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0" />
    </children>
 </AnchorPane>
